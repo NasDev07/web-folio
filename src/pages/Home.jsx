@@ -61,13 +61,13 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-4 lg:gap-0 pt-6 lg:pt-0">
                     {/* Social Links */}
                     <div className="flex justify-center lg:justify-start space-x-4 lg:space-x-6">
-                        <a href="#" className="text-gray-400 hover:text-green-400 transition-colors p-2 hover:p-3 rounded-full bg-gray-800/50 hover:bg-green-500/10" aria-label="GitHub">
+                        <a href="https://github.com/NasDev07" target='_blank' className="text-gray-400 hover:text-green-400 transition-colors p-2 hover:p-3 rounded-full bg-gray-800/50 hover:bg-green-500/10" aria-label="GitHub">
                             <GithubIcon />
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-green-400 transition-colors p-2 hover:p-3 rounded-full bg-gray-800/50 hover:bg-green-500/10" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/nas-ruddin/" target='_blank' className="text-gray-400 hover:text-green-400 transition-colors p-2 hover:p-3 rounded-full bg-gray-800/50 hover:bg-green-500/10" aria-label="LinkedIn">
                             <LinkedinIcon />
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-green-400 transition-colors p-2 hover:p-3 rounded-full bg-gray-800/50 hover:bg-green-500/10" aria-label="Email">
+                        <a href="mailto:nasruddin20182019@gmail.com" target='_blank' className="text-gray-400 hover:text-green-400 transition-colors p-2 hover:p-3 rounded-full bg-gray-800/50 hover:bg-green-500/10" aria-label="Email">
                             <MailIcon />
                         </a>
                     </div>

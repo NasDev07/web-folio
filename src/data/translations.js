@@ -1,3 +1,4 @@
+// src/data/translations.js
 export const translations = {
     en: {
         greeting: "Hello, I'm Nasruddin",
@@ -19,14 +20,6 @@ export const translations = {
             description1: "I'm a passionate UX/UI Designer and Frontend Developer with over 5 years of experience creating digital experiences that combine beautiful design with functional code.",
             description2: "Based in San Francisco, I work with startups and established companies to bring their digital visions to life. I specialize in React, modern JavaScript, and creating responsive, accessible web applications.",
             skills: "Skills",
-            react: "React",
-            javascript: "JavaScript",
-            uiux: "UI/UX Design",
-            nodejs: "Node.js",
-            reactLevel: "90%",
-            jsLevel: "85%",
-            uiuxLevel: "88%",
-            nodeLevel: "75%"
         },
         projects: {
             title: "Projects",
@@ -90,14 +83,6 @@ export const translations = {
             description1: "Saya adalah desainer UX/UI dan pengembang frontend yang penuh semangat dengan pengalaman lebih dari 5 tahun menciptakan pengalaman digital yang menggabungkan desain indah dengan kode yang fungsional.",
             description2: "Berbasis di San Francisco, saya bekerja dengan startup dan perusahaan mapan untuk mewujudkan visi digital mereka. Saya mengkhususkan diri dalam React, JavaScript modern, dan menciptakan aplikasi web yang responsif dan dapat diakses.",
             skills: "Keterampilan",
-            react: "React",
-            javascript: "JavaScript",
-            uiux: "Desain UI/UX",
-            nodejs: "Node.js",
-            reactLevel: "90%",
-            jsLevel: "85%",
-            uiuxLevel: "88%",
-            nodeLevel: "75%"
         },
         projects: {
             title: "Proyek",
@@ -161,14 +146,6 @@ export const translations = {
             description1: "我是一位充满热情的 UX/UI 设计师和前端开发者，拥有超过 5 年的经验，创建结合美丽设计与功能性代码的数字体验。",
             description2: "我位于旧金山，与初创公司和成熟企业合作，将它们的数字愿景变为现实。我专注于 React、现代 JavaScript 和创建响应式、可访问的 Web 应用程序。",
             skills: "技能",
-            react: "React",
-            javascript: "JavaScript",
-            uiux: "UI/UX 设计",
-            nodejs: "Node.js",
-            reactLevel: "90%",
-            jsLevel: "85%",
-            uiuxLevel: "88%",
-            nodeLevel: "75%"
         },
         projects: {
             title: "项目",
