@@ -375,8 +375,8 @@ const Home = () => {
                                 {t.greeting}
                             </div>
                             <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                                {t.heroTitle.split(' ')[0]}<br className="sm:hidden" />
-                                <span className="text-green-400">{t.heroTitle.split(' ')[1]}</span>
+                                <br className="sm:hidden" />
+                                <span className="text-green-400">{t.heroTitle.split(' ')}</span>
                             </h1>
                             <p className="text-sm sm:text-base lg:text-xl text-gray-300 leading-relaxed">
                                 {t.heroSubtitle}

@@ -2,12 +2,12 @@
 export const translations = {
     en: {
         greeting: "Hello, I'm Nasruddin",
-        heroTitle: "I code cool",
-        heroSubtitle: "UX/UI Designer and Frontend Developer based in San Francisco. Creating digital experiences that matter.",
+        heroTitle: "code cool",
+        heroSubtitle: "I’m a Web Developer & Software Engineer specializing in responsive, efficient, and user-focused web and mobile apps.",
         getInTouch: "Get In Touch",
         viewProjects: "View Projects",
-        email: "nasdev@gmail.com",
-        phone: "+1 (555) 123-4567",
+        email: "nasruddin20182019@gmail.com",
+        phone: "+62 (822) 6742-xxxx",
         nav: {
             home: "Home",
             about: "About",
@@ -65,12 +65,12 @@ export const translations = {
     },
     id: {
         greeting: "Halo, saya Nasruddin",
-        heroTitle: "Saya mengkodek hal-hal keren",
-        heroSubtitle: "Desainer UX/UI dan Pengembang Frontend berbasis di San Francisco. Menciptakan pengalaman digital yang berarti.",
+        heroTitle: "kode keren",
+        heroSubtitle: "Saya Web Developer & Software Engineer yang berfokus membangun aplikasi web dan mobile responsif, efisien, dan berorientasi pada pengguna.",
         getInTouch: "Hubungi Saya",
         viewProjects: "Lihat Proyek",
-        email: "nasdev@gmail.com",
-        phone: "+1 (555) 123-4567",
+        email: "nasruddin20182019@@gmail.com",
+        phone: "+62 (822) 6742-xxxx",
         nav: {
             home: "Beranda",
             about: "Tentang",
@@ -127,13 +127,13 @@ export const translations = {
         }
     },
     zh: {
-        greeting: "你好，我是 Nasruddin",
-        heroTitle: "我编写很酷的",
-        heroSubtitle: "位于旧金山的 UX/UI 设计师和前端开发者。创造有意义的数字体验。",
+        greeting: "你好，我是纳斯鲁丁",
+        heroTitle: "代碼很酷",
+        heroSubtitle: "我是网页开发与软件工程师，专注于构建响应迅速、高效、以用户为中心的网页和移动应用。",
         getInTouch: "联系我",
         viewProjects: "查看项目",
-        email: "nasdev@gmail.com",
-        phone: "+1 (555) 123-4567",
+        email: "nasruddin20182019@gmail.com",
+        phone: "+62 (822) 6742-xxxx",
         nav: {
             home: "首页",
             about: "关于",
