@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import anasDev from '../assets/anasDev.jpg';
 
 // Custom SVG Icons untuk setiap skill
 const SkillIcons = {
@@ -202,9 +203,9 @@ const About = () => {
               </div>
             </div>
             <div className="relative">
-                <div className="w-full h-96 rounded-lg overflow-hidden">
+                <div className="w-full h-100 rounded-lg overflow-hidden">
                     <img
-                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=400&fit=crop"
+                        src={anasDev}
                         alt="Working"
                         className="w-full h-full object-cover"
                     />

@@ -17,8 +17,8 @@ export const translations = {
         },
         about: {
             title: "About Me",
-            description1: "I'm a passionate UX/UI Designer and Frontend Developer with over 5 years of experience creating digital experiences that combine beautiful design with functional code.",
-            description2: "Based in San Francisco, I work with startups and established companies to bring their digital visions to life. I specialize in React, modern JavaScript, and creating responsive, accessible web applications.",
+            description1: "I am a Web Developer & Software Engineer with expertise in building web and mobile applications. I am proficient in various programming languages, frameworks, and modern tools that support the development of responsive, efficient, and user-focused systems.",
+            description2: "Continuously enhancing my skills in Full-Stack Development and creating digital solutions that are innovative, user-friendly, and impactful.",
             skills: "Skills",
         },
         projects: {
@@ -80,8 +80,8 @@ export const translations = {
         },
         about: {
             title: "Tentang Saya",
-            description1: "Saya adalah desainer UX/UI dan pengembang frontend yang penuh semangat dengan pengalaman lebih dari 5 tahun menciptakan pengalaman digital yang menggabungkan desain indah dengan kode yang fungsional.",
-            description2: "Berbasis di San Francisco, saya bekerja dengan startup dan perusahaan mapan untuk mewujudkan visi digital mereka. Saya mengkhususkan diri dalam React, JavaScript modern, dan menciptakan aplikasi web yang responsif dan dapat diakses.",
+            description1: "Saya sebagai Web Developer & Software Engineer dengan keahlian dalam membangun aplikasi web dan mobile. Saya menguasai berbagai bahasa pemrograman, framework, serta tools modern yang mendukung pengembangan sistem yang responsif, efisien, dan berfokus pada kebutuhan pengguna.",
+            description2: "Terus mengembangkan kemampuan di bidang Full-Stack Development serta menciptakan solusi digital yang inovatif, ramah pengguna, dan memberikan dampak positif.",
             skills: "Keterampilan",
         },
         projects: {
@@ -143,8 +143,8 @@ export const translations = {
         },
         about: {
             title: "关于我",
-            description1: "我是一位充满热情的 UX/UI 设计师和前端开发者，拥有超过 5 年的经验，创建结合美丽设计与功能性代码的数字体验。",
-            description2: "我位于旧金山，与初创公司和成熟企业合作，将它们的数字愿景变为现实。我专注于 React、现代 JavaScript 和创建响应式、可访问的 Web 应用程序。",
+            description1: "我是一名网页开发工程师和软件工程师，擅长开发网页和移动应用程序。我精通多种编程语言、框架和现代工具，能够支持开发响应迅速、高效且以用户为中心的系统。",
+            description2: "不断提升自己在全栈开发方面的能力，并致力于创造创新、易用且具有积极影响的数字化解决方案。",
             skills: "技能",
         },
         projects: {
