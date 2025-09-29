@@ -1,188 +1,43 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { motion, AnimatePresence } from 'framer-motion';
 import anasDev from '../assets/anasDev.jpg';
-
-const SkillIcons = {
-  HTML5: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M2 2h20v20H2z"/>
-      <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" strokeWidth="2"/>
-      <text x="12" y="15" fontSize="12" textAnchor="middle" fill="currentColor">H5</text>
-    </svg>
-  ),
-  CSS3: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M2 2h20v20H2z"/>
-      <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" strokeWidth="2"/>
-      <text x="12" y="15" fontSize="12" textAnchor="middle" fill="currentColor">C3</text>
-    </svg>
-  ),
-  JavaScript: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <circle cx="12" cy="12" r="10"/>
-      <path d="M8 8l8 8M8 16l8-8" stroke="white" strokeWidth="2"/>
-    </svg>
-  ),
-  TypeScript: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <rect x="4" y="4" width="16" height="16" rx="2"/>
-      <path d="M8 8h8v8H8z" fill="white"/>
-    </svg>
-  ),
-  PHP: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2L2 7v10l10 5 10-5V7l-10-5z"/>
-      <path d="M12 7l5 2.5v5L12 17l-5-2.5v-5L12 7z" fill="white"/>
-    </svg>
-  ),
-  AndroidStudio: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M4 4h16v16H4z"/>
-      <path d="M6 6h12v12H6z" fill="none" stroke="currentColor" strokeWidth="2"/>
-    </svg>
-  ),
-  Flutter: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2L2 12l10 10 10-10L12 2z"/>
-      <path d="M12 6L6 12l6 6 6-6-6-6z" fill="white"/>
-    </svg>
-  ),
-  WordPress: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <circle cx="12" cy="12" r="10"/>
-      <path d="M8 12h8" stroke="white" strokeWidth="2"/>
-    </svg>
-  ),
-  React: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <circle cx="12" cy="12" r="2"/>
-      <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1"/>
-      <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(60 12 12)"/>
-      <ellipse cx="12" cy="12" rx="8" ry="3" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(-60 12 12)"/>
-    </svg>
-  ),
-  Nextjs: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2L2 7v10l10 5 10-5V7l-10-5z"/>
-      <path d="M12 7l5 2.5v5L12 17l-5-2.5v-5L12 7z" opacity="0.7"/>
-    </svg>
-  ),
-  Laravel: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M4 4h16v16H4z"/>
-      <path d="M6 6h12v12H6z" fill="white"/>
-    </svg>
-  ),
-  Nodejs: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-      <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="white"/>
-    </svg>
-  ),
-  Expressjs: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2L2 7v10l10 5 10-5V7l-10-5z"/>
-      <path d="M12 7l5 2.5v5L12 17l-5-2.5v-5L12 7z" fill="none" stroke="white" strokeWidth="2"/>
-    </svg>
-  ),
-  jQuery: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2L2 12l10 10 10-10L12 2z"/>
-      <path d="M12 6L6 12l6 6 6-6-6-6z" fill="white"/>
-    </svg>
-  ),
-  AJAX: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <rect x="4" y="4" width="16" height="16" rx="2"/>
-      <path d="M8 8h8v8H8z" fill="white"/>
-    </svg>
-  ),
-  Bootstrap: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M2 2h20v20H2z"/>
-      <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" strokeWidth="2"/>
-    </svg>
-  ),
-  TailwindCSS: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2L2 7v10l10 5 10-5V7l-10-5z"/>
-      <path d="M12 7l5 2.5v5L12 17l-5-2.5v-5L12 7z" fill="white"/>
-    </svg>
-  ),
-  MySQL: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <circle cx="12" cy="12" r="10"/>
-      <path d="M8 8l8 8M8 16l8-8" stroke="white" strokeWidth="2"/>
-    </svg>
-  ),
-  MongoDB: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-    </svg>
-  ),
-  Firebase: () => (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
-      <path d="M12 2L4 8v12l8 2 8-2V8l-8-6z"/>
-      <path d="M12 6L8 12v6l4 1 4-1v-6l-4-6z" fill="white"/>
-    </svg>
-  )
-};
-
-const skillsData = [
-  { name: "HTML5", Icon: SkillIcons.HTML5, color: "cyan" },
-  { name: "CSS3", Icon: SkillIcons.CSS3, color: "cyan" },
-  { name: "JavaScript", Icon: SkillIcons.JavaScript, color: "yellow" },
-  { name: "TypeScript", Icon: SkillIcons.TypeScript, color: "blue" },
-  { name: "PHP", Icon: SkillIcons.PHP, color: "purple" },
-  { name: "AndroidStudio", Icon: SkillIcons.AndroidStudio, color: "green" },
-  { name: "Flutter", Icon: SkillIcons.Flutter, color: "blue" },
-  { name: "WordPress", Icon: SkillIcons.WordPress, color: "pink" },
-  { name: "React", Icon: SkillIcons.React, color: "cyan" },
-  { name: "Next.js", Icon: SkillIcons.Nextjs, color: "gray" },
-  { name: "Laravel", Icon: SkillIcons.Laravel, color: "red" },
-  { name: "Node.js", Icon: SkillIcons.Nodejs, color: "green" },
-  { name: "Express.js", Icon: SkillIcons.Expressjs, color: "gray" },
-  { name: "jQuery", Icon: SkillIcons.jQuery, color: "yellow" },
-  { name: "AJAX", Icon: SkillIcons.AJAX, color: "blue" },
-  { name: "Bootstrap", Icon: SkillIcons.Bootstrap, color: "purple" },
-  { name: "Tailwind CSS", Icon: SkillIcons.TailwindCSS, color: "cyan" },
-  { name: "MySQL", Icon: SkillIcons.MySQL, color: "orange" },
-  { name: "MongoDB", Icon: SkillIcons.MongoDB, color: "green" },
-  { name: "Firebase", Icon: SkillIcons.Firebase, color: "orange" }
-];
-
-const SkillCard = ({ img, name, username, body }) => {
-  return (
-    <figure
-      className="relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-    >
-      <div className="flex flex-row items-center gap-2">
-        <div className="w-8 h-8 flex items-center justify-center">
-          <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        </div>
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
-        </div>
-      </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
-    </figure>
-  );
-};
 
 const About = () => {
   const { t } = useLanguage();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut', staggerChildren: 0.2 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+  };
+
   return (
-    <div className="min-h-screen py-8 sm:py-12 lg:py-20 bg-gray-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-6 max-w-7xl">
+    <motion.div
+      className="min-h-screen py-8 sm:py-12 lg:py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-bold text-white mb-8 text-center">{t.about.title}</h1>
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start mb-12 sm:mb-16 lg:mb-20">
-            <div className="space-y-6 sm:space-y-8 lg:order-1">
+          <motion.h1
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 sm:mb-12 lg:mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-600"
+            variants={itemVariants}
+          >
+            {t.about.title}
+          </motion.h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
+            <motion.div className="space-y-6 sm:space-y-8" variants={itemVariants}>
               <div className="space-y-4 sm:space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed">
                   {t.about.description1}
@@ -191,105 +46,167 @@ const About = () => {
                   {t.about.description2}
                 </p>
               </div>
-            </div>
-            <div className="relative">
-              <div className="w-full h-100 rounded-lg overflow-hidden">
+            </motion.div>
+            <motion.div
+              className="relative group"
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="w-full h-80 sm:h-96 lg:h-[28rem] rounded-2xl overflow-hidden shadow-2xl relative">
                 <img
                   src={anasDev}
-                  alt="Working"
-                  className="w-full h-full object-cover"
+                  alt="Nasruddin with cat"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="mt-12 sm:mt-16 lg:mt-24">
-            <h2 className="text-5xl font-bold text-white mb-8 text-center">
+          <motion.div className="mt-12 sm:mt-16 lg:mt-24" variants={containerVariants}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-600">
               {t.about.skills}
             </h2>
-            <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-3 lg:gap-4 p-3 sm:p-4 lg:p-6 bg-gray-800/30 rounded-xl sm:rounded-2xl border border-gray-700/50">
-                {skillsData.map((skill, index) => (
-                  <div
+            <div className="max-w-5xl mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 sm:gap-6">
+              {[
+                { name: 'HTML5', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968267.png', color: 'orange' },
+                { name: 'CSS3', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968247.png', color: 'blue' },
+                { name: 'JavaScript', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', color: 'yellow' },
+                { name: 'TypeScript', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', color: 'cyan' },
+                { name: 'PHP', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968332.png', color: 'purple' },
+                { name: 'Android Studio', src: 'https://cdn-icons-png.flaticon.com/512/809/809111.png', color: 'green' },
+                { name: 'Flutter', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968370.png', color: 'cyan' },
+                { name: 'WordPress', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968390.png', color: 'blue' },
+                { name: 'React', src: 'https://cdn-icons-png.flaticon.com/512/1126/1126678.png', color: 'cyan' },
+                { name: 'Next.js', src: 'https://cdn-icons-png.flaticon.com/512/12666/12666140.png', color: 'cyan' },
+                { name: 'Laravel', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968378.png', color: 'red' },
+                { name: 'Node.js', src: 'https://cdn-icons-png.flaticon.com/512/919/919825.png', color: 'green' },
+                { name: 'Express.js', src: 'https://cdn-icons-png.flaticon.com/512/12666/12666147.png', color: 'green' },
+                { name: 'jQuery', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968293.png', color: 'blue' },
+                { name: 'AJAX', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968294.png', color: 'yellow' },
+                { name: 'Bootstrap', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968672.png', color: 'purple' },
+                { name: 'Tailwind CSS', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968380.png', color: 'cyan' },
+                { name: 'MySQL', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968313.png', color: 'blue' },
+                { name: 'MongoDB', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968382.png', color: 'green' },
+                { name: 'Firebase', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968377.png', color: 'yellow' },
+              ].map((skill, index) => (
+                <motion.div
+                  key={index}
+                  className={`flex flex-col items-center p-3 bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:bg-${skill.color}-600/30 transition-all duration-300 transform hover:scale-110 hover:shadow-2xl`}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                  variants={itemVariants}
+                  whileHover={{ rotate: 5 }}
+                >
+                  <motion.img
+                    src={skill.src}
+                    alt={skill.name}
+                    className="w-10 h-10 sm:w-12 sm:h-12 mb-2 transition-transform duration-300"
+                    animate={{ rotate: hoveredIndex === index ? 360 : 0 }}
+                    transition={{ duration: 0.6 }}
+                  />
+                  <span className="text-xs sm:text-sm text-center text-gray-200 font-medium">
+                    {skill.name}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+            <motion.div
+              className="mt-6 sm:mt-8 flex justify-center flex-wrap gap-2 sm:gap-4 lg:gap-6"
+              variants={itemVariants}
+            >
+              {[
+                { label: 'Programming & Markup', color: 'cyan-400' },
+                { label: 'Frameworks & Libraries', color: 'green-400' },
+                { label: 'Databases & Cloud', color: 'orange-400' },
+              ].map((category, index) => (
+                <motion.div
+                  key={index}
+                  className="flex items-center gap-2 text-xs sm:text-sm text-gray-300 bg-gray-800/30 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full border border-gray-700/30 hover:border-gray-600 transition-colors duration-300"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <div className={`w-2 h-2 bg-${category.color} rounded-full`}></div>
+                  <span>{category.label}</span>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+          <motion.div className="mt-12 sm:mt-16 lg:mt-24" variants={containerVariants}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-600">
+              Experience
+            </h2>
+            <div className="max-w-5xl mx-auto relative">
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1.5 bg-gradient-to-b from-cyan-400 to-purple-600 rounded-full"></div>
+              <div className="space-y-12 sm:space-y-16 relative">
+                {[
+                  {
+                    title: 'Junior Developer',
+                    company: 'paperlesshospital.id · Contract',
+                    date: 'Sep 2024 - Present · 1 yr 1 mo',
+                    location: 'Langsa, Nanggroe Aceh Darussalam, Indonesia',
+                    desc: 'Proud to join PT. Digital Kreasi Muslim as a Junior Developer, contributing to the AI-based Electronic Medical Record System (paperlesshospital.id) at RSUD Langsa. Responsibilities include developing Hospital Information Management Systems (SIMRS), technical support, and app maintenance using Laravel, PHP, JavaScript, and MySQL.',
+                    color: 'cyan-400',
+                  },
+                  {
+                    title: 'Software Engineer',
+                    company: 'taiwanhalal · Part-time',
+                    date: 'Sep 2024 - Sep 2025 · 1 yr 1 mo',
+                    location: 'Hsinchu City, Taiwan, Taiwan · Remote',
+                    desc: 'Worked remotely as a Software Engineer using modern technologies. Experienced in mobile app development with Flutter, Ionic Angular, and Kotlin, backend with Node.js and Express.js, and web development with React.js. Developed KiwiSmart, a map-based web app with React and Python Flask, enhanced with AI integration.',
+                    color: 'purple-600',
+                  },
+                  {
+                    title: 'Web Developer',
+                    company: 'Universitas Malikussaleh · Internship',
+                    date: 'Jan 2023 - Dec 2024 · 2 yrs',
+                    location: 'Indonesia',
+                    desc: 'Designed projects from scratch, including design, scope, timeline, and goals for the Sistem Informasi Unimal website. Served as Admin for the Prodi Sistem Informasi website, earning a Junior Web Developer certification from Digital Talent Scholarship. Contributed to community service by assisting teachers with a bank soal app and developed the PMIM accreditation website.',
+                    color: 'cyan-400',
+                  },
+                  {
+                    title: 'Web Developer',
+                    company: 'Hasnur Centre · Internship',
+                    date: 'Aug 2022 - Dec 2022 · 5 mos',
+                    location: 'Banjarmasin, South Kalimantan, Indonesia',
+                    desc: 'Developed and completed web projects for Hulu Talent using HTML5, CSS3, JavaScript, TypeScript, PHP, Android Studio, Flutter, WordPress, React, Next.js, Laravel, Node.js, Express.js, jQuery, AJAX, Bootstrap, Tailwind CSS, MySQL, MongoDB, and Firebase.',
+                    color: 'purple-600',
+                  },
+                ].map((exp, index) => (
+                  <motion.div
                     key={index}
-                    className={`
-                      relative group cursor-pointer transition-all duration-300
-                      ${hoveredIndex === index ? 'scale-105 sm:scale-110 z-10' : 'scale-100 z-0'}
-                      hover:z-20
-                    `}
-                    onMouseEnter={() => setHoveredIndex(index)}
-                    onMouseLeave={() => setHoveredIndex(null)}
+                    className={`flex items-center justify-between ${
+                      index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
+                    } flex-col sm:flex-row`}
+                    variants={itemVariants}
                   >
-                    <div className={`
-                      w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20
-                      bg-gray-800/80 rounded-lg sm:rounded-xl flex items-center justify-center
-                      border border-gray-700/50
-                      transition-all duration-300 ease-out
-                      ${hoveredIndex === index 
-                        ? 'bg-gray-700/90 border-cyan-400/50 shadow-lg sm:shadow-2xl shadow-cyan-500/20' 
-                        : 'hover:bg-gray-700/70 hover:border-gray-600/70 hover:shadow-md sm:hover:shadow-lg'
-                      }
-                    `}>
-                      <div className={`
-                        w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10
-                        transition-all duration-300 ease-out
-                        ${skill.color === 'yellow' ? 'text-yellow-400' :
-                          skill.color === 'cyan' ? 'text-cyan-400' :
-                          skill.color === 'red' ? 'text-red-400' :
-                          skill.color === 'green' ? 'text-green-400' :
-                          skill.color === 'orange' ? 'text-orange-400' :
-                          skill.color === 'purple' ? 'text-purple-400' :
-                          skill.color === 'blue' ? 'text-blue-400' :
-                          skill.color === 'pink' ? 'text-pink-400' :
-                          'text-white'
-                        }
-                        ${hoveredIndex === index ? 'drop-shadow-lg sm:drop-shadow-2xl scale-105 sm:scale-110' : 'group-hover:drop-shadow-md sm:group-hover:drop-shadow-lg'}
-                      `}>
-                        <skill.Icon />
+                    <motion.div
+                      className="sm:w-5/12 w-full sm:mb-0 mb-6"
+                      whileHover={{ scale: 1.03 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <div
+                        className={`p-4 sm:p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-xl transition-all duration-300 hover:bg-${exp.color}/30 hover:shadow-2xl border border-gray-700/30`}
+                      >
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white">{exp.title}</h3>
+                        <p className="text-gray-300 text-sm sm:text-base">{exp.company}</p>
+                        <p className="text-sm text-gray-400">{exp.date}</p>
+                        <p className="text-sm text-gray-400">{exp.location}</p>
+                        <p className="mt-3 text-gray-200 text-sm sm:text-base leading-relaxed">{exp.desc}</p>
                       </div>
-                    </div>
-                    {hoveredIndex === index && (
-                      <div className={`
-                        absolute inset-0 rounded-lg sm:rounded-xl -z-10
-                        bg-gradient-to-br ${skill.color === 'yellow' ? 'from-yellow-500/20' :
-                          skill.color === 'cyan' ? 'from-cyan-500/20' :
-                          skill.color === 'red' ? 'from-red-500/20' :
-                          skill.color === 'green' ? 'from-green-500/20' :
-                          skill.color === 'orange' ? 'from-orange-500/20' :
-                          skill.color === 'purple' ? 'from-purple-500/20' :
-                          skill.color === 'blue' ? 'from-blue-500/20' :
-                          skill.color === 'pink' ? 'from-pink-500/20' :
-                          'from-white/20'} to-transparent
-                        blur-lg sm:blur-xl opacity-75 animate-pulse hidden sm:block
-                      `}></div>
-                    )}
-                    {hoveredIndex === index && (
-                      <div className="absolute -top-8 sm:-top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-900 text-white text-xs rounded-md border border-gray-600 whitespace-nowrap z-30 hidden sm:block">
-                        {skill.name}
-                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
-                      </div>
-                    )}
-                  </div>
+                    </motion.div>
+                    <motion.div
+                      className={`w-4 h-4 bg-${exp.color} rounded-full border-4 border-gray-900 absolute left-1/2 transform -translate-x-1/2 hidden sm:block`}
+                      animate={{ scale: hoveredIndex === index ? 1.3 : 1 }}
+                      transition={{ duration: 0.3 }}
+                    ></motion.div>
+                  </motion.div>
                 ))}
               </div>
             </div>
-            <div className="mt-6 sm:mt-8 flex justify-center flex-wrap gap-2 sm:gap-4 lg:gap-8">
-              <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-gray-400 bg-gray-800/50 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md sm:rounded-lg border border-gray-700/50">
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyan-400 rounded-full"></div>
-                <span>Programming & Markup</span>
-              </div>
-              <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-gray-400 bg-gray-800/50 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md sm:rounded-lg border border-gray-700/50">
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-400 rounded-full"></div>
-                <span>Frameworks & Libraries</span>
-              </div>
-              <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-gray-400 bg-gray-800/50 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md sm:rounded-lg border border-gray-700/50">
-                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-400 rounded-full"></div>
-                <span>Databases & Cloud</span>
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

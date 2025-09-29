@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Skills */
 .skill-grid {
     --grid-gap: 0.75rem;
