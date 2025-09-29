@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import anasDev from '.././assets/anasDev.jpg';
+import anasDev from '../assets/anasDev.jpg';
 
 const About = () => {
   const { t } = useLanguage();
