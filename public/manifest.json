@@ -1,0 +1,23 @@
+{
+  "name": "Anas Dev - Full Stack Developer Portfolio",
+  "short_name": "Anas Dev",
+  "description": "Portfolio of Anas Dev - Experienced Full Stack Developer specializing in React, Node.js, and modern web technologies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f2937",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": []
+}
