@@ -227,31 +227,22 @@ export const translations = {
             readMore: "Read More",
             posts: [
                 {
-                    id: "post1",
-                    title: "Building Modern Web Applications",
-                    excerpt: "Learn about the latest trends in web development and how to build scalable applications.",
-                    date: "2024-09-15",
-                    readTime: "5 min read",
-                    content: "In the ever-evolving world of web development, staying updated with the latest trends is crucial for building scalable and efficient applications. This post dives into modern frameworks like React, Vue.js, and Next.js, the rise of progressive web apps (PWAs), and the importance of performance optimization. Discover techniques to leverage these tools to create responsive designs that work seamlessly across all devices, including mobile and desktop.",
-                    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop"
+                    id: "heffan-khitan-project",
+                    title: "Project Showcase – Heffan Khitan Website Development",
+                    excerpt: "I had the opportunity to work on a website project for Heffan Khitan, a modern circumcision service located in Malang, East Java.",
+                    date: "2024-10-01",
+                    readTime: "4 min read",
+                    content: "I had the opportunity to work on a website project for Heffan Khitan, a modern circumcision service located in Malang, East Java.\n\nTechnologies Used:\n- PHP\n- WordPress\n\nDevelopment Focus:\n- Informative, accessible, and fully responsive UI/UX design\n- Clear content structure (profile, services, circumcision education)\n- SEO optimization to improve discoverability for potential patients\n- Integration of online registration form & WhatsApp for seamless booking\n\nAbout Heffan Khitan:\nManaged by experienced medical professionals\nUtilizes sterile and disposable equipment\nSuitable for all ages (infants to adults)\nQuick process, minimal trauma, and child-friendly approach\n\n🔗 Visit the website here: https://heffankhitan.com/\n\nThis project has been a valuable experience for me as a freelancer, especially in combining healthcare business needs with user-friendly digital solutions.",
+                    image: "/assets/blog/blog_1.png"
                 },
                 {
-                    id: "post2",
-                    title: "React Best Practices in 2024",
-                    excerpt: "Discover the best practices for React development that will make your code cleaner and more efficient.",
-                    date: "2024-09-10",
-                    readTime: "8 min read",
-                    content: "As React continues to dominate the frontend landscape in 2024, adopting best practices can significantly improve your development workflow. This article covers component optimization, effective state management with Redux Toolkit, and seamless TypeScript integration. Learn practical tips to write cleaner code, enhance team collaboration, and ensure your applications are maintainable and scalable for the future.",
-                    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop"
-                },
-                {
-                    id: "post3",
-                    title: "The Future of Frontend Development",
-                    excerpt: "Exploring upcoming technologies and frameworks that will shape the future of frontend development.",
-                    date: "2024-09-05",
-                    readTime: "6 min read",
-                    content: "The future of frontend development is brimming with exciting possibilities. This post explores emerging technologies like WebAssembly, the Jamstack architecture, and AI-driven design tools. Understand their impact on performance, security, and developer experience, and get a glimpse into how these innovations will redefine the way we build web applications in the coming years.",
-                    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=400&fit=crop"
+                    id: "emr-system-collaboration",
+                    title: "Electronic Medical Record (EMR) System Development Collaboration",
+                    excerpt: "Today, my team and I had the opportunity to engage in an inspiring collaboration with healthcare professionals at RSUD Langsa to support the development of the Electronic Medical Record (EMR) system.",
+                    date: "2024-09-28",
+                    readTime: "3 min read",
+                    content: "Today, my team and I had the opportunity to engage in an inspiring collaboration with healthcare professionals at RSUD Langsa to support the development of the Electronic Medical Record (EMR) system.\n\nOur discussion focused on refining the design and features of the EMR forms, which are set to be implemented soon. This system is expected to streamline medical service workflows, enhance the accuracy of patient records, and ensure fully integrated data management.\n\nThis initiative is part of the hospital's ongoing digital transformation, aimed at delivering more modern, responsive, and patient-centered healthcare services.\n\nWe believe that cross-disciplinary collaboration is key to creating innovative solutions in the healthcare sector. Let's continue moving forward together toward a more efficient and impactful future in medical services.\n\n💡🏥 paperlesshospital.id\n#RSUDLangsa #EMR #DigitalTransformation #HealthcareInnovation #CollaborationForChange",
+                    image: "/assets/blog/blog_2.jpg"
                 }
             ]
         }
@@ -484,31 +475,22 @@ export const translations = {
             readMore: "Baca Selengkapnya",
             posts: [
                 {
-                    id: "post1",
-                    title: "Membangun Aplikasi Web Modern",
-                    excerpt: "Pelajari tentang tren terbaru dalam pengembangan web dan cara membangun aplikasi yang dapat diskalakan.",
-                    date: "15 Sep 2024",
-                    readTime: "5 menit baca",
-                    content: "Dalam dunia pengembangan web yang terus berkembang, tetap terbarui dengan tren terbaru sangat penting untuk membangun aplikasi yang skalabel dan efisien. Artikel ini membahas framework modern seperti React, Vue.js, dan Next.js, maraknya aplikasi web progresif (PWA), serta pentingnya optimalisasi performa. Temukan teknik untuk memanfaatkan alat-alat ini guna menciptakan desain responsif yang berfungsi mulus di semua perangkat, termasuk mobile dan desktop.",
-                    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop"
+                    id: "heffan-khitan-project",
+                    title: "Project Showcase – Pengembangan Website Heffan Khitan",
+                    excerpt: "Saya berkesempatan mengerjakan proyek website untuk Heffan Khitan, layanan khitan modern yang berlokasi di Malang, Jawa Timur.",
+                    date: "1 Okt 2024",
+                    readTime: "4 menit baca",
+                    content: "Saya berkesempatan mengerjakan proyek website untuk Heffan Khitan, layanan khitan modern yang berlokasi di Malang, Jawa Timur.\n\nTeknologi yang Digunakan:\n- PHP\n- WordPress\n\nFokus Pengembangan:\n- Desain UI/UX yang informatif, mudah diakses, dan sepenuhnya responsif\n- Struktur konten yang jelas (profil, layanan, edukasi khitan)\n- Optimasi SEO untuk meningkatkan ketemu'an bagi calon pasien\n- Integrasi formulir pendaftaran online & WhatsApp untuk booking yang mudah\n\nTentang Heffan Khitan:\nDikelola oleh tenaga medis berpengalaman\nMenggunakan peralatan steril dan sekali pakai\nCocok untuk segala usia (bayi hingga dewasa)\nProses cepat, trauma minimal, dan pendekatan ramah anak\n\n🔗 Kunjungi website di sini: https://heffankhitan.com/\n\nProyek ini telah menjadi pengalaman berharga bagi saya sebagai freelancer, terutama dalam menggabungkan kebutuhan bisnis kesehatan dengan solusi digital yang ramah pengguna.",
+                    image: "/assets/blog/blog_1.png"
                 },
                 {
-                    id: "post2",
-                    title: "Praktik Terbaik React di 2024",
-                    excerpt: "Temukan praktik terbaik untuk pengembangan React yang akan membuat kode Anda lebih bersih dan efisien.",
-                    date: "10 Sep 2024",
-                    readTime: "8 menit baca",
-                    content: "Saat React terus mendominasi lanskap frontend pada tahun 2024, mengadopsi praktik terbaik dapat secara signifikan meningkatkan alur kerja pengembangan Anda. Artikel ini membahas optimalisasi komponen, manajemen state yang efektif dengan Redux Toolkit, dan integrasi TypeScript yang mulus. Pelajari tips praktis untuk menulis kode yang lebih bersih, meningkatkan kolaborasi tim, dan memastikan aplikasi Anda dapat dikelola dan skalabel untuk masa depan.",
-                    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop"
-                },
-                {
-                    id: "post3",
-                    title: "Masa Depan Pengembangan Frontend",
-                    excerpt: "Mengeksplorasi teknologi dan framework mendatang yang akan membentuk masa depan pengembangan frontend.",
-                    date: "5 Sep 2024",
-                    readTime: "6 menit baca",
-                    content: "Masa depan pengembangan frontend penuh dengan kemungkinan menarik. Artikel ini mengeksplorasi teknologi yang muncul seperti WebAssembly, arsitektur Jamstack, dan alat desain berbasis AI. Pahami dampaknya pada performa, keamanan, dan pengalaman pengembang, serta dapatkan gambaran tentang bagaimana inovasi ini akan mendefinisikan ulang cara kita membangun aplikasi web di tahun-tahun mendatang.",
-                    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=400&fit=crop"
+                    id: "emr-system-collaboration",
+                    title: "Kolaborasi Pengembangan Sistem Rekam Medis Elektronik (EMR)",
+                    excerpt: "Hari ini, tim saya dan saya berkesempatan terlibat dalam kolaborasi yang menginspirasi dengan tenaga kesehatan di RSUD Langsa untuk mendukung pengembangan sistem Rekam Medis Elektronik (EMR).",
+                    date: "28 Sep 2024",
+                    readTime: "3 menit baca",
+                    content: "Hari ini, tim saya dan saya berkesempatan terlibat dalam kolaborasi yang menginspirasi dengan tenaga kesehatan di RSUD Langsa untuk mendukung pengembangan sistem Rekam Medis Elektronik (EMR).\n\nDiskusi kami difokuskan pada penyempurnaan desain dan fitur formulir EMR, yang akan segera diimplementasikan. Sistem ini diharapkan dapat menyederhanakan alur kerja layanan medis, meningkatkan akurasi catatan pasien, dan memastikan manajemen data yang terintegrasi penuh.\n\nInisiatif ini merupakan bagian dari transformasi digital berkelanjutan rumah sakit, yang bertujuan untuk memberikan layanan kesehatan yang lebih modern, responsif, dan berpusat pada pasien.\n\nKami percaya bahwa kolaborasi lintas disiplin adalah kunci untuk menciptakan solusi inovatif di sektor kesehatan. Mari terus bergerak maju bersama menuju masa depan yang lebih efisien dan berdampak dalam layanan medis.\n\n💡🏥 paperlesshospital.id\n#RSUDLangsa #EMR #TransformasiDigital #InovasiKesehatan #KolaborasiUntukPerubahan",
+                    image: "/assets/blog/blog_2.jpg"
                 }
             ]
         }
@@ -741,31 +723,22 @@ export const translations = {
             readMore: "阅读更多",
             posts: [
                 {
-                    id: "post1",
-                    title: "构建现代 Web 应用程序",
-                    excerpt: "了解 Web 开发领域的最新趋势以及如何构建可扩展的应用程序。",
-                    date: "2024-09-15",
-                    readTime: "5 分钟阅读",
-                    content: "在不断发展的 Web 开发世界中，保持与最新趋势同步对于构建可扩展和高效的应用至关重要。本文深入探讨了现代框架（如 React、Vue.js 和 Next.js）、渐进式 Web 应用（PWA）的兴起以及性能优化的重要性。了解如何利用这些工具创建在所有设备（包括移动设备和桌面）上无缝工作的响应式设计。",
-                    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop"
+                    id: "heffan-khitan-project",
+                    title: "项目展示 – Heffan Khitan 网站开发",
+                    excerpt: "我有机会为 Heffan Khitan（位于东爪哇玛琅的现代割礼服务）开发网站项目。",
+                    date: "2024-10-01",
+                    readTime: "4 分钟阅读",
+                    content: "我有机会为 Heffan Khitan（位于东爪哇玛琅的现代割礼服务）开发网站项目。\n\n使用的技术：\n- PHP\n- WordPress\n\n开发重点：\n- 信息丰富、易于访问且完全响应式的 UI/UX 设计\n- 清晰的内容结构（个人资料、服务、割礼教育）\n- SEO 优化以提高潜在患者的可发现性\n- 集成在线注册表单和 WhatsApp 以实现无缝预订\n\n关于 Heffan Khitan：\n由经验丰富的医疗专业人员管理\n使用无菌和一次性设备\n适合所有年龄段（婴儿到成人）\n快速过程、最小创伤和儿童友好的方法\n\n🔗 在这里访问网站：https://heffankhitan.com/\n\n这个项目对我作为自由职业者来说是宝贵的经验，特别是在将医疗保健业务需求与用户友好的数字解决方案相结合方面。",
+                    image: "/assets/blog/blog_1.png"
                 },
                 {
-                    id: "post2",
-                    title: "2024 年 React 最佳实践",
-                    excerpt: "发现 React 开发的最佳实践，让您的代码更干净、更高效。",
-                    date: "2024-09-10",
-                    readTime: "8 分钟阅读",
-                    content: "随着 React 在 2024 年继续主导前端领域，采用最佳实践可以显著改善您的开发流程。本文涵盖了组件优化、通过 Redux Toolkit 有效管理状态以及与 TypeScript 的无缝集成。学习实用技巧以编写更清洁的代码、增强团队协作，并确保您的应用程序具有未来可维护性和可扩展性。",
-                    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop"
-                },
-                {
-                    id: "post3",
-                    title: "前端开发的未来",
-                    excerpt: "探索即将到来的技术和框架，它们将塑造前端开发的未来。",
-                    date: "2024-09-05",
-                    readTime: "6 分钟阅读",
-                    content: "前端开发的未来充满激动人心的可能性。本文探讨了 WebAssembly、Jamstack 架构和 AI 驱动设计工具等新兴技术。了解它们对性能、安全性和开发体验的影响，并一窥这些创新将在未来几年如何重新定义我们构建 Web 应用的方式。",
-                    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=400&fit=crop"
+                    id: "emr-system-collaboration",
+                    title: "电子病历 (EMR) 系统开发合作",
+                    excerpt: "今天，我和我的团队有机会与朗萨医院的医疗专业人员进行鼓舞人心的合作，支持电子病历 (EMR) 系统的开发。",
+                    date: "2024-09-28",
+                    readTime: "3 分钟阅读",
+                    content: "今天，我和我的团队有机会与朗萨医院的医疗专业人员进行鼓舞人心的合作，支持电子病历 (EMR) 系统的开发。\n\n我们的讨论重点是完善即将实施的 EMR 表单的设计和功能。该系统预计将简化医疗服务工作流程，提高患者记录的准确性，并确保完全集成的数据管理。\n\n这一举措是医院持续数字化转型的一部分，旨在提供更现代、响应更快且以患者为中心的医疗服务。\n\n我们相信跨学科合作是在医疗保健领域创造创新解决方案的关键。让我们继续携手迈向更高效、更有影响力的医疗服务未来。\n\n💡🏥 paperlesshospital.id\n#朗萨医院 #EMR #数字化转型 #医疗创新 #合作促变革",
+                    image: "/assets/blog/blog_2.jpg"
                 }
             ]
         }
