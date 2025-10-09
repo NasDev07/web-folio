@@ -230,7 +230,7 @@ export const translations = {
                     id: "heffan-khitan-project",
                     title: "Project Showcase – Heffan Khitan Website Development",
                     excerpt: "I had the opportunity to work on a website project for Heffan Khitan, a modern circumcision service located in Malang, East Java.",
-                    date: "2024-10-01",
+                    date: "2025-8-01",
                     readTime: "4 min read",
                     content: "I had the opportunity to work on a website project for Heffan Khitan, a modern circumcision service located in Malang, East Java.\n\nTechnologies Used:\n- PHP\n- WordPress\n\nDevelopment Focus:\n- Informative, accessible, and fully responsive UI/UX design\n- Clear content structure (profile, services, circumcision education)\n- SEO optimization to improve discoverability for potential patients\n- Integration of online registration form & WhatsApp for seamless booking\n\nAbout Heffan Khitan:\nManaged by experienced medical professionals\nUtilizes sterile and disposable equipment\nSuitable for all ages (infants to adults)\nQuick process, minimal trauma, and child-friendly approach\n\n🔗 Visit the website here: https://heffankhitan.com/\n\nThis project has been a valuable experience for me as a freelancer, especially in combining healthcare business needs with user-friendly digital solutions.",
                     image: "/assets/blog/blog_1.png"
@@ -239,7 +239,7 @@ export const translations = {
                     id: "emr-system-collaboration",
                     title: "Electronic Medical Record (EMR) System Development Collaboration",
                     excerpt: "Today, my team and I had the opportunity to engage in an inspiring collaboration with healthcare professionals at RSUD Langsa to support the development of the Electronic Medical Record (EMR) system.",
-                    date: "2024-09-28",
+                    date: "2024-09-01",
                     readTime: "3 min read",
                     content: "Today, my team and I had the opportunity to engage in an inspiring collaboration with healthcare professionals at RSUD Langsa to support the development of the Electronic Medical Record (EMR) system.\n\nOur discussion focused on refining the design and features of the EMR forms, which are set to be implemented soon. This system is expected to streamline medical service workflows, enhance the accuracy of patient records, and ensure fully integrated data management.\n\nThis initiative is part of the hospital's ongoing digital transformation, aimed at delivering more modern, responsive, and patient-centered healthcare services.\n\nWe believe that cross-disciplinary collaboration is key to creating innovative solutions in the healthcare sector. Let's continue moving forward together toward a more efficient and impactful future in medical services.\n\n💡🏥 paperlesshospital.id\n#RSUDLangsa #EMR #DigitalTransformation #HealthcareInnovation #CollaborationForChange",
                     image: "/assets/blog/blog_2.jpg"
@@ -478,7 +478,7 @@ export const translations = {
                     id: "heffan-khitan-project",
                     title: "Project Showcase – Pengembangan Website Heffan Khitan",
                     excerpt: "Saya berkesempatan mengerjakan proyek website untuk Heffan Khitan, layanan khitan modern yang berlokasi di Malang, Jawa Timur.",
-                    date: "1 Okt 2024",
+                    date: "1 Augst 2025",
                     readTime: "4 menit baca",
                     content: "Saya berkesempatan mengerjakan proyek website untuk Heffan Khitan, layanan khitan modern yang berlokasi di Malang, Jawa Timur.\n\nTeknologi yang Digunakan:\n- PHP\n- WordPress\n\nFokus Pengembangan:\n- Desain UI/UX yang informatif, mudah diakses, dan sepenuhnya responsif\n- Struktur konten yang jelas (profil, layanan, edukasi khitan)\n- Optimasi SEO untuk meningkatkan ketemu'an bagi calon pasien\n- Integrasi formulir pendaftaran online & WhatsApp untuk booking yang mudah\n\nTentang Heffan Khitan:\nDikelola oleh tenaga medis berpengalaman\nMenggunakan peralatan steril dan sekali pakai\nCocok untuk segala usia (bayi hingga dewasa)\nProses cepat, trauma minimal, dan pendekatan ramah anak\n\n🔗 Kunjungi website di sini: https://heffankhitan.com/\n\nProyek ini telah menjadi pengalaman berharga bagi saya sebagai freelancer, terutama dalam menggabungkan kebutuhan bisnis kesehatan dengan solusi digital yang ramah pengguna.",
                     image: "/assets/blog/blog_1.png"
@@ -487,7 +487,7 @@ export const translations = {
                     id: "emr-system-collaboration",
                     title: "Kolaborasi Pengembangan Sistem Rekam Medis Elektronik (EMR)",
                     excerpt: "Hari ini, tim saya dan saya berkesempatan terlibat dalam kolaborasi yang menginspirasi dengan tenaga kesehatan di RSUD Langsa untuk mendukung pengembangan sistem Rekam Medis Elektronik (EMR).",
-                    date: "28 Sep 2024",
+                    date: "01 Sep 2024",
                     readTime: "3 menit baca",
                     content: "Hari ini, tim saya dan saya berkesempatan terlibat dalam kolaborasi yang menginspirasi dengan tenaga kesehatan di RSUD Langsa untuk mendukung pengembangan sistem Rekam Medis Elektronik (EMR).\n\nDiskusi kami difokuskan pada penyempurnaan desain dan fitur formulir EMR, yang akan segera diimplementasikan. Sistem ini diharapkan dapat menyederhanakan alur kerja layanan medis, meningkatkan akurasi catatan pasien, dan memastikan manajemen data yang terintegrasi penuh.\n\nInisiatif ini merupakan bagian dari transformasi digital berkelanjutan rumah sakit, yang bertujuan untuk memberikan layanan kesehatan yang lebih modern, responsif, dan berpusat pada pasien.\n\nKami percaya bahwa kolaborasi lintas disiplin adalah kunci untuk menciptakan solusi inovatif di sektor kesehatan. Mari terus bergerak maju bersama menuju masa depan yang lebih efisien dan berdampak dalam layanan medis.\n\n💡🏥 paperlesshospital.id\n#RSUDLangsa #EMR #TransformasiDigital #InovasiKesehatan #KolaborasiUntukPerubahan",
                     image: "/assets/blog/blog_2.jpg"
@@ -726,7 +726,7 @@ export const translations = {
                     id: "heffan-khitan-project",
                     title: "项目展示 – Heffan Khitan 网站开发",
                     excerpt: "我有机会为 Heffan Khitan（位于东爪哇玛琅的现代割礼服务）开发网站项目。",
-                    date: "2024-10-01",
+                    date: "2025-08-01",
                     readTime: "4 分钟阅读",
                     content: "我有机会为 Heffan Khitan（位于东爪哇玛琅的现代割礼服务）开发网站项目。\n\n使用的技术：\n- PHP\n- WordPress\n\n开发重点：\n- 信息丰富、易于访问且完全响应式的 UI/UX 设计\n- 清晰的内容结构（个人资料、服务、割礼教育）\n- SEO 优化以提高潜在患者的可发现性\n- 集成在线注册表单和 WhatsApp 以实现无缝预订\n\n关于 Heffan Khitan：\n由经验丰富的医疗专业人员管理\n使用无菌和一次性设备\n适合所有年龄段（婴儿到成人）\n快速过程、最小创伤和儿童友好的方法\n\n🔗 在这里访问网站：https://heffankhitan.com/\n\n这个项目对我作为自由职业者来说是宝贵的经验，特别是在将医疗保健业务需求与用户友好的数字解决方案相结合方面。",
                     image: "/assets/blog/blog_1.png"
@@ -735,7 +735,7 @@ export const translations = {
                     id: "emr-system-collaboration",
                     title: "电子病历 (EMR) 系统开发合作",
                     excerpt: "今天，我和我的团队有机会与朗萨医院的医疗专业人员进行鼓舞人心的合作，支持电子病历 (EMR) 系统的开发。",
-                    date: "2024-09-28",
+                    date: "2024-09-01",
                     readTime: "3 分钟阅读",
                     content: "今天，我和我的团队有机会与朗萨医院的医疗专业人员进行鼓舞人心的合作，支持电子病历 (EMR) 系统的开发。\n\n我们的讨论重点是完善即将实施的 EMR 表单的设计和功能。该系统预计将简化医疗服务工作流程，提高患者记录的准确性，并确保完全集成的数据管理。\n\n这一举措是医院持续数字化转型的一部分，旨在提供更现代、响应更快且以患者为中心的医疗服务。\n\n我们相信跨学科合作是在医疗保健领域创造创新解决方案的关键。让我们继续携手迈向更高效、更有影响力的医疗服务未来。\n\n💡🏥 paperlesshospital.id\n#朗萨医院 #EMR #数字化转型 #医疗创新 #合作促变革",
                     image: "/assets/blog/blog_2.jpg"
